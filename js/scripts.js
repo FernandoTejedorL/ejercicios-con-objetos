@@ -115,7 +115,7 @@ const sentenceToAnalise = sentence => {
             dataStrings.firstFloor.vowels.push(sentence.charAt(counter));
             toUpper += sentence.charAt(counter).toUpperCase();
             toLower += sentence.charAt(counter).toLowerCase();
-            dataStrings.sixthFloor.secretCode += vowels.indexOf(currentLetter);
+            dataStrings.sixthFloor.secretCode += vowels.indexOf(currentLetter)+1;
         }else if (consonant.includes(currentLetter)) {
             dataStrings.secondFloor.consonants.push(sentence.charAt(counter));
             toUpper += sentence.charAt(counter).toUpperCase();

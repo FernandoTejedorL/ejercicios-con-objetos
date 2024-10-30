@@ -105,10 +105,9 @@ const dataStrings = {
 };
 const sentenceToAnalise = sentence => {
     let vowels = "aeiou"
-    let consonant = "zbcdfghjklmnñpqrstvwxy"
+    let consonant = "bcdfghjklmnñpqrstvwxyz"
     let toUpper = ''
     let toLower = ''
-    let secret = ''
     for (let counter = 0; counter < sentence.length; counter++) {
         const currentLetter = sentence.charAt(counter).toLowerCase();
         if (vowels.includes(currentLetter)) {
